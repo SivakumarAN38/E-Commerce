@@ -1,0 +1,30 @@
+/* src/App.css (append) */
+:root {
+  --primary: #ABFF4F;
+  --accent: #071035;
+  --muted: #6b7280;
+  --container: 1100px;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: linear-gradient(180deg,#f6f8fb 0%, #ffffff 100%);
+  margin:0;
+  color:var(--accent);
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* small responsive cart layout helper */
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap:20px;
+}
+@media (max-width:980px) {
+  .cart-layout { grid-template-columns: 2fr; }
+}
