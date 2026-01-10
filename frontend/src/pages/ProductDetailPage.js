@@ -10,7 +10,7 @@ export default function ProductDetailPage({ token, cart, setCart }) {
   // Load product details
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/products/${id}`)
+      .get(`http://electro-mart-xa02.onrender.com/api/products/${id}`)
       .then((res) => setProduct(res.data))
       .catch(() => setMessage('Error loading product.'));
   }, [id]);
