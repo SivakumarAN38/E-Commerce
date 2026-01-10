@@ -7,7 +7,7 @@ export default function LoginPage({ setToken }) {
 
   const handleSubmit = e => {
     e.preventDefault();
-    axios.post('http://localhost:5000/api/users/login', form)
+    axios.post('http://electro-mart-xa02.onrender.com/api/users/login', form)
       .then(res => {
         setMessage('Login successful!');
         setToken(res.data.token);

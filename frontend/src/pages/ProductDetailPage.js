@@ -24,7 +24,7 @@ export default function ProductDetailPage({ token, cart, setCart }) {
 
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/cart/add',
+        'http://electro-mart-xa02.onrender.com/api/cart/add',
         { productId: id, quantity: 1 },
         { headers: { Authorization: `Bearer ${token}` } }
       );

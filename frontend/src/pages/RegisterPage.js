@@ -8,7 +8,7 @@ export default function RegisterPage() {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/users/register', form, {
+      const res = await axios.post('http://electro-mart-xa02.onrender.com/api/users/register', form, {
         headers: { 'Content-Type': 'application/json' }
       });
 

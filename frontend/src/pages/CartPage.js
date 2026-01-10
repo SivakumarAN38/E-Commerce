@@ -8,7 +8,7 @@ export default function CartPage({ cart, setCart, token }) {
   useEffect(() => {
     if (!token) return;
 
-    fetch('http://localhost:5000/api/cart', {
+    fetch('http://electro-mart-xa02.onrender.com/api/cart', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${token}`,
@@ -20,7 +20,7 @@ export default function CartPage({ cart, setCart, token }) {
   }, [token, setCart]);
 
   const removeFromCart = id => {
-    fetch('http://localhost:5000/api/cart/remove', {
+    fetch('http://electro-mart-xa02.onrender.com/api/cart/remove', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
