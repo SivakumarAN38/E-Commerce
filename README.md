@@ -91,11 +91,7 @@ ecommerce-mern/
 │ └── README.md
 
 
-
-
-
 \## ⚙️ Installation \& Setup
-
 
 
 \### 1️⃣ Clone the Repository
@@ -107,72 +103,30 @@ git clone https://github.com/SivakumarAN38/E-Commerce.git
 
 
 2️⃣ Backend Setup
-
 cd backend
-
 npm install
-
-
-
-
 
 Create a .env file in the backend folder and add:
 
-
-
 MONGO\_URI=your\_mongodb\_connection\_string
-
 JWT\_SECRET=your\_secret\_key
 
 
-
-
-
 Run backend:
-
-
-
 node server.js
 
-
-
 3️⃣ Frontend Setup
-
 cd frontend
-
 npm install
-
 npm start
 
-
-
 🌐 Usage
-
-
-
 Open browser and go to:
-
-
-
 http://localhost:3000
 
-
-
-
-
 Backend runs on:
-
-
-
 http://localhost:5000
 
-
-
-
-
 👤 Author
-
-
-
 SivakumarAN
 
